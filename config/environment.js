@@ -4,7 +4,7 @@ module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'x-pent-up-ui',
     // namespaced directory where resolver will look for your resource files
-    podModulePrefix: 'my-new-app/pods',
+    podModulePrefix: 'x-pent-up-ui/pods',
     environment,
     rootURL: '/',
     locationType: 'auto',
