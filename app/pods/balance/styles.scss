@@ -1,0 +1,14 @@
+@at-root {
+    .flex-grid {
+        display: flex;
+
+        .header {
+            flex: 1;
+            font-weight: bold;
+        }
+
+        .col {
+            flex: 1;
+        }
+    }
+}

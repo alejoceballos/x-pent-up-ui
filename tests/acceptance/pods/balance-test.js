@@ -1,14 +1,15 @@
-import { module, test } from 'qunit';
-import { visit, currentURL } from '@ember/test-helpers';
-import { setupApplicationTest } from 'ember-qunit';
+import {module, test} from 'qunit';
+import {visit, currentURL} from '@ember/test-helpers';
+import {setupApplicationTest} from 'ember-qunit';
 
-module('Acceptance | balance', function(hooks) {
-  setupApplicationTest(hooks);
+module('Acceptance | balance', hooks => {
+    setupApplicationTest(hooks);
 
-  test('visiting /balance', async function(assert) {
-    await visit('/balance');
+    test('visiting /balance', async assert => {
+        await visit('/balance');
 
-    assert.equal(currentURL(), '/balance');
-    assert.dom('h1').hasText('Financial Balances')
-  });
+        assert.equal(currentURL(), '/balance');
+        assert.dom('[data-test="page-header"]').hasText('Financial Balances');
+        assert.dom('[data-test="balance-table"]').exists();
+    });
 });

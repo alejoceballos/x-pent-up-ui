@@ -9,6 +9,6 @@ module('Acceptance | about', function(hooks) {
     await visit('/about');
 
     assert.equal(currentURL(), '/about');
-    assert.dom('h1').hasText('About');
+    assert.dom('[data-test="page-header"]').hasText('About');
   });
 });

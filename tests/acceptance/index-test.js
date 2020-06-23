@@ -8,7 +8,7 @@ module('Acceptance | index', function (hooks) {
     test('visiting /', async function (assert) {
         await visit('/');
         assert.equal(currentURL(), '/');
-        assert.dom('h1').hasText('X Pent Up!');
+        assert.dom('[data-test="page-header"]').hasText('X Pent Up!');
     });
 
     test('Clicking "Balances"', async function (assert) {
@@ -22,5 +22,4 @@ module('Acceptance | index', function (hooks) {
         await click('[data-test="link-to-about"]');
         assert.equal(currentURL(), '/about');
     });
-
 });
