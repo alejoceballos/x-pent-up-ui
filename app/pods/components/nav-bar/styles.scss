@@ -1,0 +1,28 @@
+$margins: 2px 10px 2px 10px;
+
+@at-root {
+    .menu {
+        display: flex;
+        flex-flow: row;
+
+        .first-menu-item {
+            flex-grow: 1;
+            margin: $margins;
+        }
+
+        .last-menu-item {
+            flex-grow: 1;
+            margin: $margins;
+        }
+
+        .sub-menu {
+            align-items: center;
+            display: flex;
+            flex-grow: 3;
+
+            .menu-item {
+                margin: $margins;
+            }
+        }
+    }
+}

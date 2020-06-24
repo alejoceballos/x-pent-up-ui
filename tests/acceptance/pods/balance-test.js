@@ -9,6 +9,7 @@ module('Acceptance | balance', hooks => {
         await visit('/balance');
 
         assert.equal(currentURL(), '/balance');
+        assert.dom('[data-test="nav-bar"]').exists();
         assert.dom('[data-test="page-header"]').hasText('Financial Balances');
         assert.dom('[data-test="balance-table"]').exists();
     });

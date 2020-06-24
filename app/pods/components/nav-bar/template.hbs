@@ -1,0 +1,22 @@
+<nav class="menu" data-test="nav-bar">
+    <div class="first-menu-item">
+        <LinkTo @route="index" data-test="menu-main">
+            Main
+        </LinkTo>
+    </div>
+    <div class="sub-menu">
+        <div class="menu-item">
+            <LinkTo @route="balance" data-test="menu-balance">
+                Balances
+            </LinkTo>
+        </div>
+        <div class="menu-item">
+            <LinkTo @route="about" data-test="menu-about">
+                About
+            </LinkTo>
+        </div>
+        <div class="menu-item">Whatever 1</div>
+        <div class="menu-item">Whatever 2</div>
+    </div>
+    <div class="last-menu-item">TBD</div>
+</nav>
