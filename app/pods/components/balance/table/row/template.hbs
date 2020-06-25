@@ -1,10 +1,16 @@
 <div class="table-row" data-test="grid-row">
-    <div class="table-col-show-summary">+</div>
+    <div class="table-col-show-summary">
+        <button data-test="show-summary" {{on "click" this.toggleSummary}}>
+            {{if this.isSummaryVisible '-' '+'}}
+        </button>
+    </div>
     <div class="table-col">My budget</div>
     <div class="table-col">My Personal budget of 2020</div>
     <div class="table-col last-col">[Edit][Delete]</div>
 </div>
-<div class="regular-summary">
-    <div>Total: XXX,XX</div>
-    <div>Average: XX,XX</div>
-</div>
+{{#if this.isSummaryVisible}}
+    <div class="regular-summary" data-test="row-summary">
+        <div>Total: XXX,XX</div>
+        <div>Average: XX,XX</div>
+    </div>
+{{/if}}
