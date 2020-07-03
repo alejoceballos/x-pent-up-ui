@@ -1,0 +1,68 @@
+{
+    "data": [
+        {
+            "type": "balance",
+            "id": 1,
+            "attributes": {
+                "name": "My Budget",
+                "description": "My personal budget description 1"
+            }
+        },
+        {
+            "type": "balance",
+            "id": 2,
+            "attributes": {
+                "name": "My Budget 2",
+                "description": "My personal budget description 2"
+            }
+        },
+        {
+            "type": "balance",
+            "id": 3,
+            "attributes": {
+                "name": "My Budget 3",
+                "description": "My personal budget description 3"
+            }
+        },
+        {
+            "type": "balance",
+            "id": 4,
+            "attributes": {
+                "name": "My Budget 4",
+                "description": "My personal budget description 4"
+            }
+        },
+        {
+            "type": "balance",
+            "id": 5,
+            "attributes": {
+                "name": "My Budget 5",
+                "description": "My personal budget description 5"
+            }
+        },
+        {
+            "type": "balance",
+            "id": 6,
+            "attributes": {
+                "name": "My Budget 6",
+                "description": "My personal budget description 6"
+            }
+        },
+        {
+            "type": "balance",
+            "id": 7,
+            "attributes": {
+                "name": "My Budget 7",
+                "description": "My personal budget description 7"
+            }
+        },
+        {
+            "type": "balance",
+            "id": 8,
+            "attributes": {
+                "name": "My Budget 8",
+                "description": "My personal budget description 8"
+            }
+        }
+    ]
+}

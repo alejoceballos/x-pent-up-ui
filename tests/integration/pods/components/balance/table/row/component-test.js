@@ -6,7 +6,7 @@ import {hbs} from 'ember-cli-htmlbars';
 module('Integration | Component | balance/table/row', function (hooks) {
     setupRenderingTest(hooks);
 
-    test('it renders', async function (assert) {
+    test('it renders with budgets', async function (assert) {
         const budget = { name: 'My budget', description: 'My personal budget' };
         this.set('budget', budget);
         await render(hbs`<Balance::Table::Row @budget={{this.budget}}/>`);

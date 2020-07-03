@@ -64,13 +64,13 @@ Ember's tutorial/guide is being used in the learning process.
 
 #### Chapter 8 - Working With Data
 
-- [ ] Working with Route Files
-- [ ] Returning Local Data from the Model Hook
-- [ ] Accessing Route Models from Templates
-- [ ] Mocking Server Data with Static JSON Files
-- [ ] Fetching Remote Data from the Model Hook
-- [ ] Adapting Server Data
-- [ ] Loops and Local Variables in Templates with `{{#each}}`
+- [x] Working with Route Files
+- [x] Returning Local Data from the Model Hook
+- [x] Accessing Route Models from Templates
+- [x] Mocking Server Data with Static JSON Files
+- [x] Fetching Remote Data from the Model Hook
+- [x] Adapting Server Data
+- [x] Loops and Local Variables in Templates with `{{#each}}`
 
 ## Part 2
 
