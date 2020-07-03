@@ -13,6 +13,6 @@ module('Integration | Component | page/header', function(hooks) {
       </Page::Header>
     `);
 
-    assert.dom('[data-test="page-header"]').hasText('My Page Header');
+    assert.dom('[data-test-page-header]').hasText('My Page Header');
   });
 });

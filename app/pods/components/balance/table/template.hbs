@@ -1,9 +1,6 @@
-<div class="balance-table" data-test="balance-table">
+<div class="balance-table" data-test-balance-table>
     <Balance::Table::Header />
-    <Balance::Table::Row />
-    <Balance::Table::Row />
-    <Balance::Table::Row />
-    <Balance::Table::Row />
-    <Balance::Table::Row />
-    <Balance::Table::Row />
+    {{#each @budgets as |budget|}}
+        <Balance::Table::Row @budget={{budget}} />
+    {{/each}}
 </div>

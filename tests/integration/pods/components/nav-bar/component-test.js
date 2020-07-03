@@ -15,9 +15,9 @@ module('Integration | Component | nav-bar', function (hooks) {
             </NavBar>
         `);
 
-        assert.dom('[data-test="nav-bar"]').exists();
-        assert.dom('[data-test="menu-main"]').exists();
-        assert.dom('[data-test="menu-balance"]').exists();
-        assert.dom('[data-test="menu-about"]').exists();
+        assert.dom('[data-test-nav-bar]').exists();
+        assert.dom('[data-test-menu-main]').exists();
+        assert.dom('[data-test-menu-balance]').exists();
+        assert.dom('[data-test-menu-about]').exists();
     });
 });

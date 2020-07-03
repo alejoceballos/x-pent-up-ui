@@ -8,6 +8,6 @@ module('Integration | Component | balance/table/header', function (hooks) {
 
     test('it renders', async function (assert) {
         await render(hbs`<Balance::Table::Header />`);
-        assert.dom('[data-test="grid-header"]').exists();
+        assert.dom('[data-test-grid-header]').exists();
     });
 });
