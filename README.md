@@ -72,9 +72,17 @@ Ember's tutorial/guide is being used in the learning process.
 - [x] Adapting Server Data
 - [x] Loops and Local Variables in Templates with `{{#each}}`
 
-## Part 2
+### Part 2
 
-TBD
+#### Chapter 9 - Route Params
+
+- [ ] Routes with Dynamic Segments
+
+.
+
+.
+
+.
 
 ## App Structure
 
@@ -88,6 +96,61 @@ Set xxx in`.ember-cli`:
   .
   "usePods": true
 }
+```
+
+## Useful commands
+
+### Ember Generate Route
+
+```shell script
+ember g route <complete/route/path>
+```
+```
+installing route
+  create app/pods/complete/route/path/route.js
+  create app/pods/complete/route/path/template.hbs
+updating router
+  add route complete/route/path
+installing route-test
+  create tests/unit/pods/complete/route/path/route-test.js
+```
+
+### Ember Generate Acceptance Test
+```shell script
+ember g acceptance-test page-name
+```
+```
+installing acceptance-test
+  create tests/acceptance/page-name-test.js
+```
+
+### Ember Generate Component Template and Test
+Generates only:
+- template.hbs
+- component-test.js
+
+```shell script
+ember g component complete/component/path
+```
+```
+installing component
+  create app/pods/components/complete/component/path/template.hbs
+  skip app/pods/components/complete/component/path/component.js
+  tip to add a class, run `ember generate component-class complete/component/path`
+installing component-test
+  create tests/integration/pods/components/complete/component/path/component-test.js
+```
+
+### Ember Generate Component Class
+Generates only:
+- component.js
+
+```shell script
+ember g component-class complete/component/path
+```
+```
+installing component-class
+  create app/pods/components/complete/component/path/component.js
 ```
 
 ## Interesting links

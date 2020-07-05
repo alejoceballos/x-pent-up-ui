@@ -6,7 +6,10 @@
     </div>
     <div class="table-col" data-test-table-col-name>{{@budget.name}}</div>
     <div class="table-col" data-test-table-col-description>{{@budget.description}}</div>
-    <div class="table-col last-col">[Edit][Delete]</div>
+    <div class="table-col last-col">
+        <LinkTo @route="budgets.budget" @model={{@budget.id}} data-test-table-col-link-to-edit>[Edit]</LinkTo>
+        <span data-test-table-col-link-to-delete>[Delete]</span>
+    </div>
 </div>
 {{#if this.isSummaryVisible}}
     <div class="regular-summary" data-test-row-summary>

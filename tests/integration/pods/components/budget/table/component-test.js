@@ -3,7 +3,7 @@ import {setupRenderingTest} from 'ember-qunit';
 import {render} from '@ember/test-helpers';
 import {hbs} from 'ember-cli-htmlbars';
 
-module('Integration | Component | balance/table', function (hooks) {
+module('Integration | Component | budget/table', function (hooks) {
     setupRenderingTest(hooks);
 
     test('it renders', async function (assert) {
@@ -13,10 +13,10 @@ module('Integration | Component | balance/table', function (hooks) {
 
         this.set('budgets', budgets);
         await render(hbs`
-            <Balance::Table @budgets={{this.budgets}} />
+            <Budget::Table @budgets={{this.budgets}} />
         `);
 
-        assert.dom('[data-test-balance-table]').exists();
+        assert.dom('[data-test-budget-table]').exists();
         assert.dom('[data-test-grid-header]').exists();
         assert.dom('[data-test-grid-row]').exists();
     });

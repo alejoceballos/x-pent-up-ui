@@ -1,0 +1,6 @@
+<div class="budget-table" data-test-budget-table>
+    <Budget::Table::Header />
+    {{#each @budgets as |budget|}}
+        <Budget::Table::Row @budget={{budget}} />
+    {{/each}}
+</div>
