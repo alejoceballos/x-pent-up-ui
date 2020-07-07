@@ -14,7 +14,7 @@ module('Acceptance | budgets', hooks => {
         assert.dom('[data-test-budget-table]').exists();
     });
 
-    test('visiting /budgets/budget', async assert => {
+    test('click to go to budget page', async assert => {
         await visit('/budgets');
         await click('[data-test-table-col-link-to-edit]');
         assert.equal(currentURL(), '/budgets/1');
