@@ -76,7 +76,17 @@ Ember's tutorial/guide is being used in the learning process.
 
 #### Chapter 9 - Route Params
 
-- [ ] Routes with Dynamic Segments
+- [x] Routes with Dynamic Segments
+- [x] Links with Dynamic Segments
+- [x] Component Tests with Access to the Router
+- [x] Accessing Parameters from Dynamic Segments
+- [x] Displaying Model Details with a Component
+- [x] Sharing Common Setup Code Between Tests
+- [x] Adding a Route Template
+
+#### Chapter 10 - Service Injection 
+
+- [ ] Scoping the Feature
 
 .
 

@@ -5,39 +5,37 @@ import {setupApplicationTest} from 'ember-qunit';
 module('Acceptance | index', function (hooks) {
     setupApplicationTest(hooks);
 
-    test('visiting /', async function (assert) {
+    hooks.beforeEach(async function() {
         await visit('/');
+    });
+
+    test('visiting /', async function (assert) {
         assert.equal(currentURL(), '/');
         assert.dom('[data-test-nav-bar]').exists();
         assert.dom('[data-test-page-header]').hasText('X Pent Up!');
     });
 
     test('Clicking Main Menu', async function (assert) {
-        await visit('/');
         await click('[data-test-menu-main]');
         assert.equal(currentURL(), '/');
     });
 
     test('Clicking Budget Menu', async function (assert) {
-        await visit('/');
         await click('[data-test-menu-budget]');
         assert.equal(currentURL(), '/budgets');
     });
 
     test('Clicking About Menu', async function (assert) {
-        await visit('/');
         await click('[data-test-menu-about]');
         assert.equal(currentURL(), '/about');
     });
 
-    test('Clicking "Budgets"', async function (assert) {
-        await visit('/');
+    test('Clicking "Budgets" link', async function (assert) {
         await click('[data-test-link-to-budget]');
         assert.equal(currentURL(), '/budgets');
     });
 
-    test('Clicking "About"', async function (assert) {
-        await visit('/');
+    test('Clicking "About" link', async function (assert) {
         await click('[data-test-link-to-about]');
         assert.equal(currentURL(), '/about');
     });
