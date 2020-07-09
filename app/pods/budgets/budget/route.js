@@ -1,10 +1,10 @@
 import Route from '@ember/routing/route';
+import {inject as service} from '@ember/service';
 
 export default class BudgetsBudgetRoute extends Route {
+    @service budgets;
+
     async model(params) {
-        const response = await fetch('/api/budgets.json');
-        const { data } = await response.json();
-        const obj = data.find(model => model.id == params.budget_id);
-        return { ...obj.attributes, id: obj.id };
+        return await this.budgets.get(params.budget_id);
     }
 }

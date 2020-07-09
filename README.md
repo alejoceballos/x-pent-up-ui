@@ -87,6 +87,17 @@ Ember's tutorial/guide is being used in the learning process.
 #### Chapter 10 - Service Injection 
 
 - [ ] Scoping the Feature
+- [ ] Splattributes and the `class` Attribute
+- [ ] Accessing the Current Page URL
+- [ ] Why We Can't Test `window.location.href`
+- [ ] The Router Service
+- [ ] Ember Services vs. Global Variables
+- [ ] Mocking Services in Tests
+
+#### Chapter 11 - Ember Data
+
+- [ ] What is Ember Data?
+- [ ] 
 
 .
 

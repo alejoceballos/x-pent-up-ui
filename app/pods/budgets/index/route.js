@@ -1,12 +1,10 @@
 import Route from '@ember/routing/route';
+import {inject as service} from '@ember/service';
 
 export default class BudgetsIndexRoute extends Route {
+    @service budgets;
+
     async model() {
-        const response = await fetch('/api/budgets.json');
-        const { data } = await response.json();
-        return data.map(model => {
-            const { id, attributes } = model;
-            return { ...attributes, id };
-        });
+        return this.budgets.getAll();
     }
 }
