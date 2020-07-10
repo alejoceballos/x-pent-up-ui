@@ -22,7 +22,7 @@ module('Acceptance | index', function (hooks) {
 
     test('Clicking Budget Menu', async function (assert) {
         await click('[data-test-menu-budget]');
-        assert.equal(currentURL(), '/budgets');
+        assert.equal(currentURL(), '/budget');
     });
 
     test('Clicking About Menu', async function (assert) {
@@ -30,9 +30,9 @@ module('Acceptance | index', function (hooks) {
         assert.equal(currentURL(), '/about');
     });
 
-    test('Clicking "Budgets" link', async function (assert) {
+    test('Clicking "budget" link', async function (assert) {
         await click('[data-test-link-to-budget]');
-        assert.equal(currentURL(), '/budgets');
+        assert.equal(currentURL(), '/budget');
     });
 
     test('Clicking "About" link', async function (assert) {

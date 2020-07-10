@@ -96,8 +96,16 @@ Ember's tutorial/guide is being used in the learning process.
 
 #### Chapter 11 - Ember Data
 
-- [ ] What is Ember Data?
-- [ ] 
+- [x] What is Ember Data?
+- [x] Ember Data Models
+- [x] Testing Models
+- [x] Loading Models in Routes
+- [x] The Ember Data Store
+- [x] Working with Adapters and Serializers
+
+#### Chapter 12 - Provider Components 
+
+- [ ] Add input
 
 .
 

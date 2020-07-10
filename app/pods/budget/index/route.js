@@ -1,10 +1,10 @@
 import Route from '@ember/routing/route';
 import {inject as service} from '@ember/service';
 
-export default class BudgetsIndexRoute extends Route {
-    @service budgets;
+export default class BudgetIndexRoute extends Route {
+    @service budget;
 
     async model() {
-        return this.budgets.getAll();
+        return this.budget.getAll();
     }
 }

@@ -1,0 +1,10 @@
+{
+    "data": {
+        "type": "budget",
+        "id": 1,
+        "attributes": {
+            "name": "My Budget",
+            "description": "My personal budget description 1"
+        }
+    }
+}

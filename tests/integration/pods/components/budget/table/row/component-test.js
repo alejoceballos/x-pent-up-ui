@@ -22,7 +22,7 @@ module('Integration | Component | budget/table/row', function (hooks) {
         assert.dom('[data-test-table-col-name]').hasText(budget.name);
         assert.dom('[data-test-table-col-description]').hasText(budget.description);
         assert.dom('[data-test-table-col-link-to-edit]').hasText('[Edit]');
-        assert.dom('[data-test-table-col-link-to-edit]').hasAttribute('href', `/budgets/${budget.id}`);
+        assert.dom('[data-test-table-col-link-to-edit]').hasAttribute('href', `/budget/${budget.id}`);
         assert.dom('[data-test-table-col-link-to-delete]').hasText('[Delete]');
     });
 
