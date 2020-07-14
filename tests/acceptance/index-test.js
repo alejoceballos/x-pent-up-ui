@@ -12,7 +12,7 @@ module('Acceptance | index', function (hooks) {
     test('visiting /', async function (assert) {
         assert.equal(currentURL(), '/');
         assert.dom('[data-test-nav-bar]').exists();
-        assert.dom('[data-test-page-header]').hasText('X Pent Up!');
+        assert.dom('[data-test-page-header="main"]').hasText('X Pent Up!');
     });
 
     test('Clicking Main Menu', async function (assert) {

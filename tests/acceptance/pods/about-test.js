@@ -12,6 +12,6 @@ module('Acceptance | about', function (hooks) {
     test('visiting /about', async function (assert) {
         assert.equal(currentURL(), '/about');
         assert.dom('[data-test-nav-bar]').exists();
-        assert.dom('[data-test-page-header]').hasText('About');
+        assert.dom('[data-test-page-header="about"]').hasText('About');
     });
 });

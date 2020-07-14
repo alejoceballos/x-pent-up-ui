@@ -3,9 +3,11 @@
 A simple personal financial budget application to be able to get used to Ember's development model. The (quite good)
 Ember's tutorial/guide is being used in the learning process.
 
-## Checkpoints
+For the main project, go to [X Pent Up](https://github.com/alejoceballos/x-pent-up) repository.
 
-### Part 1
+## Checkpoints (The Ember Guides)
+
+### Part 1 (Tutorial)
 
 #### Chapter 1 - Orientation
 
@@ -57,8 +59,8 @@ Ember's tutorial/guide is being used in the learning process.
 - [ ] Managing Application-level Configurations
 - [ ] Generating a Component with a Component Class
 - [ ] Parameterizing Components with Arguments
-- [ ] Interpolating Values in Templates
-- [ ] Overriding HTML Attributes in `...attributes`
+- [x] Interpolating Values in Templates
+- [x] Overriding HTML Attributes in `...attributes`
 - [ ] Refactoring with Getters and Auto-track
 - [ ] Getting JavaScript Values into the Test Context
 
@@ -72,7 +74,7 @@ Ember's tutorial/guide is being used in the learning process.
 - [x] Adapting Server Data
 - [x] Loops and Local Variables in Templates with `{{#each}}`
 
-### Part 2
+### Part 2 (Tutorial)
 
 #### Chapter 9 - Route Params
 
@@ -84,7 +86,7 @@ Ember's tutorial/guide is being used in the learning process.
 - [x] Sharing Common Setup Code Between Tests
 - [x] Adding a Route Template
 
-#### Chapter 10 - Service Injection 
+#### Chapter 10 - Service Injection
 
 - [ ] Scoping the Feature
 - [ ] Splattributes and the `class` Attribute
@@ -103,15 +105,26 @@ Ember's tutorial/guide is being used in the learning process.
 - [x] The Ember Data Store
 - [x] Working with Adapters and Serializers
 
-#### Chapter 12 - Provider Components 
+#### Chapter 12 - Provider Components
 
-- [ ] Add input
+- [x] Add input
+- [/] Refactoring the index template into a component
+- [ ] Using Ember's `<Input>`
+
+.
+
+.
+
+.
+
+### Part 3 (Core Concepts)
 
 .
 
 .
 
 .
+
 
 ## App Structure
 
