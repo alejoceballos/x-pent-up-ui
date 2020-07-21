@@ -5,11 +5,52 @@ Ember's tutorial/guide is being used in the learning process.
 
 For the main project, go to [X Pent Up](https://github.com/alejoceballos/x-pent-up) repository.
 
-## Checkpoints (The Ember Guides)
+# Checkpoints (The Ember Guides)
 
-### Part 1 (Tutorial)
+Reference:
+- https://guides.emberjs.com/v3.19.0/
 
-#### Chapter 1 - Orientation
+## Introduction
+
+### Getting Started
+
+#### How To Use The Guides
+
+- [x] What is Ember?
+- [x] Organization
+- [x] Assumptions
+- [x] Accessibility
+- [x] Reporting a problem
+
+#### Quick Start
+
+.
+
+.
+
+.
+
+#### Working with HTML, CSS, and JavaScript
+
+.
+
+.
+
+.
+
+#### Anatomy of an Ember App
+
+.
+
+.
+
+.
+
+### Tutorial
+
+#### Part 1
+
+##### Chapter 1 - Orientation
 
 - [x] Installing Ember CLI
 - [x] Creating a New Ember App with Ember CLI
@@ -17,21 +58,21 @@ For the main project, go to [X Pent Up](https://github.com/alejoceballos/x-pent-
 - [x] Editing Files and Live Reload
 - [x] Working with HTML, CSS and Assets in an Ember App
 
-#### Chapter 2 - Building Pages
+##### Chapter 2 - Building Pages
 
 - [x] Defining Routes
 - [x] Using Route Templates
 - [ ] Defining Routes with Custom Paths
 - [x] Linking Pages with the `<LinkTo>` Component
 
-#### Chapter 3 - Automated Testing
+##### Chapter 3 - Automated Testing
 
 - [x] The Purpose of Automated Testing
 - [x] Adding Acceptance Tests with Generators
 - [x] Writing Acceptance Tests
 - [x] Practicing the Testing Workflow
 
-#### Chapter 4 - Component Basics
+##### Chapter 4 - Component Basics
 
 - [x] Extracting Markup into Components
 - [x] Passing Content to Components with `{{yield}}`
@@ -39,14 +80,14 @@ For the main project, go to [X Pent Up](https://github.com/alejoceballos/x-pent-
 - [x] Writing Component Tests
 - [x] Using the Application Template and `{{outlet}}`s
 
-#### Chapter 5 - More About Components
+##### Chapter 5 - More About Components
 
 - [x] Generating Components
 - [x] Organizing Code with Namespaced Components
 - [ ] Forwarding HTML Attributes with `...attributes`
 - [ ] Determining the Appropriate Amount of Test Coverage
 
-#### Chapter 6 - Interactive Components
+##### Chapter 6 - Interactive Components
 
 - [x] Adding Behavior to Components with Classes
 - [x] Accessing Instance States from Templates
@@ -54,7 +95,7 @@ For the main project, go to [X Pent Up](https://github.com/alejoceballos/x-pent-
 - [x] Responding to User Interaction with Actions
 - [x] Testing User Interactions
 
-#### Chapter 7 - Reusable Components
+##### Chapter 7 - Reusable Components
 
 - [ ] Managing Application-level Configurations
 - [ ] Generating a Component with a Component Class
@@ -64,7 +105,7 @@ For the main project, go to [X Pent Up](https://github.com/alejoceballos/x-pent-
 - [ ] Refactoring with Getters and Auto-track
 - [ ] Getting JavaScript Values into the Test Context
 
-#### Chapter 8 - Working With Data
+##### Chapter 8 - Working With Data
 
 - [x] Working with Route Files
 - [x] Returning Local Data from the Model Hook
@@ -74,9 +115,9 @@ For the main project, go to [X Pent Up](https://github.com/alejoceballos/x-pent-
 - [x] Adapting Server Data
 - [x] Loops and Local Variables in Templates with `{{#each}}`
 
-### Part 2 (Tutorial)
+#### Part 2
 
-#### Chapter 9 - Route Params
+##### Chapter 9 - Route Params
 
 - [x] Routes with Dynamic Segments
 - [x] Links with Dynamic Segments
@@ -86,7 +127,7 @@ For the main project, go to [X Pent Up](https://github.com/alejoceballos/x-pent-
 - [x] Sharing Common Setup Code Between Tests
 - [x] Adding a Route Template
 
-#### Chapter 10 - Service Injection
+##### Chapter 10 - Service Injection
 
 - [ ] Scoping the Feature
 - [ ] Splattributes and the `class` Attribute
@@ -96,7 +137,7 @@ For the main project, go to [X Pent Up](https://github.com/alejoceballos/x-pent-
 - [ ] Ember Services vs. Global Variables
 - [ ] Mocking Services in Tests
 
-#### Chapter 11 - Ember Data
+##### Chapter 11 - Ember Data
 
 - [x] What is Ember Data?
 - [x] Ember Data Models
@@ -105,11 +146,16 @@ For the main project, go to [X Pent Up](https://github.com/alejoceballos/x-pent-
 - [x] The Ember Data Store
 - [x] Working with Adapters and Serializers
 
-#### Chapter 12 - Provider Components
+##### Chapter 12 - Provider Components
 
 - [x] Add input
-- [/] Refactoring the index template into a component
-- [ ] Using Ember's `<Input>`
+- [x] Refactoring the index template into a component
+- [x] Using Ember's `<Input>`
+- [ ] Adding the `<Rentals::Filter>` Provider Component
+
+## Core Concepts
+
+### Components
 
 .
 
@@ -117,7 +163,60 @@ For the main project, go to [X Pent Up](https://github.com/alejoceballos/x-pent-
 
 .
 
-### Part 3 (Core Concepts)
+### Routing
+
+.
+
+.
+
+.
+
+### Services
+
+.
+
+.
+
+.
+
+### Ember Data
+
+#### Introduction
+
+- [x] What are Ember Data models?
+- [x] Ember Data flexibility
+- [x] The Store and a Single Source of Truth
+- [x] Models
+- [x] Records
+- [x] Adapter
+- [x] Caching
+- [x] Architecture Overview
+
+#### Defining Models
+
+- [x] Defining Attributes
+    - [x] Transforms
+    - [x] Custom Transforms
+    - [x] Options
+    - [x] Read-only Attributes
+
+#### Finding Records
+
+.
+
+.
+
+.
+
+#### Creating, Updating and Deleting
+
+.
+
+.
+
+.
+
+#### Relationships
 
 .
 
@@ -130,7 +229,28 @@ For the main project, go to [X Pent Up](https://github.com/alejoceballos/x-pent-
 
 ### Pods
 
-Set xxx in`.ember-cli`:
+I am using the pod structure for routes, controllers and templates, but the classic structure for models.
+```
+.
+├── app.js
+├── index.html
+├── models
+│   └── . . .
+├── pods
+│   ├── application
+│   │   └── . . .
+│   ├── budget
+│   │   └── . . .
+│   └── components
+│       └── . . .
+├── router.js
+├── styles
+│   └── app.scss
+└── templates
+    └── index.hbs
+```
+
+Set `usePods` in`.ember-cli` for pods usage by default:
 ```json
 {
   .
@@ -138,6 +258,11 @@ Set xxx in`.ember-cli`:
   .
   "usePods": true
 }
+```
+
+Use the `pod` argument when creating a new model:
+```shell script
+ember generate <model-name> --pod
 ```
 
 ## Useful commands
@@ -193,6 +318,18 @@ ember g component-class complete/component/path
 ```
 installing component-class
   create app/pods/components/complete/component/path/component.js
+```
+
+### Ember Generate Model
+```shell script
+ember g model model-name --pod
+```
+```
+DEPRECATION: Using both .ember-cli usePods settings and --pod flag together has been deprecated.
+installing model
+  create app/models/model-name.js
+installing model-test
+  create tests/unit/models/model-name-test.js
 ```
 
 ## Interesting links
