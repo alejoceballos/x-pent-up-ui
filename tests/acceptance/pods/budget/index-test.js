@@ -1,11 +1,14 @@
 import {module, test} from 'qunit';
 import {visit, click, currentURL} from '@ember/test-helpers';
 import {setupApplicationTest} from 'ember-qunit';
+import {setupMirage} from "ember-cli-mirage/test-support";
 
 module('Acceptance | budget | index', function (hooks) {
   setupApplicationTest(hooks);
+  setupMirage(hooks);
 
   hooks.beforeEach(async function () {
+    this.server.createList('budget', 2);
     await visit('/budget');
   });
 

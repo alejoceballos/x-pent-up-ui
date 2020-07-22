@@ -4,7 +4,7 @@ export default class BudgetService extends Service {
     @service store;
 
     async getAll() {
-        return this.store.findAll('budget', { reload: true, include: 'budget-category' });
+        return this.store.findAll('budget', { reload: true /*, include: 'budget-category'*/ });
     }
 
     async get(id) {
