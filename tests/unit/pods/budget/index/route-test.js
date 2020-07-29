@@ -11,9 +11,4 @@ module('Unit | Route | budget/index', function (hooks) {
     test('it exists', function (assert) {
         assert.ok(this.route);
     });
-
-    test('it returns a model', async function (assert) {
-        const model = await this.route.model();
-        assert.equal(model.length, 8);
-    });
 });

@@ -1,4 +1,4 @@
-import { Factory } from 'ember-cli-mirage';
+import { Factory, association } from 'ember-cli-mirage';
 
 export default Factory.extend({
 
@@ -8,6 +8,6 @@ export default Factory.extend({
 
   description(idx) {
     return `My long personal budget description number ${idx + 1}`;
-  }
+  },
 
 });

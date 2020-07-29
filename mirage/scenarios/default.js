@@ -5,6 +5,13 @@ export default function(server) {
     This data will not be loaded in your tests.
   */
 
-  // server.createList('post', 10);
-  server.createList('budget', 10);
+  for (let i = 0; i < 10; i++) {
+    const items = server.createList('budget-item', 10);
+
+    const categories = [];
+    for (let cIdx = 0; cIdx < 3; cIdx++) {
+      categories.push(server.create('budget-category', { items }));
+    }
+    server.create('budget', { categories });
+  }
 }

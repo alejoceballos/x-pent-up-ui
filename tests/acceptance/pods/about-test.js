@@ -2,7 +2,7 @@ import {module, test} from 'qunit';
 import {visit, currentURL} from '@ember/test-helpers';
 import {setupApplicationTest} from 'ember-qunit';
 
-module('Acceptance | about', function (hooks) {
+module('Acceptance | route | about', function (hooks) {
     setupApplicationTest(hooks);
 
     hooks.beforeEach(async function() {
