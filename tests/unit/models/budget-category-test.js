@@ -1,79 +1,58 @@
 import { module, test } from 'qunit';
 import { setupTest } from 'ember-qunit';
-import { BudgetItemType } from 'x-pent-up-ui/models/budget-item';
 import sumBy from 'lodash/sumBy';
-import moment from 'moment';
+import { BudgetUtils } from '../../utils/budget-utils';
 
 module('Unit | Model | budget category', function(hooks) {
   setupTest(hooks);
 
-  const categoryName = 'name';
-
-  const baseItem = {
-    name: categoryName,
-    budgetedDate: moment(this.today).toDate(),
-    actualDate: moment(this.today).add(1, 'days').toDate(),
-  };
-
-  const expenseItem = { ...baseItem, type: BudgetItemType.EXPENSE };
-  const expenses = [
-    { ...expenseItem, budgetedValue: 1, actualValue: 2 },
-    { ...expenseItem, budgetedValue: 2, actualValue: 3 }
-  ];
-
-  const incomeItem = { ...baseItem, type: BudgetItemType.INCOME };
-  const incomes = [
-    { ...incomeItem, budgetedValue: 4, actualValue: 5 },
-    { ...incomeItem, budgetedValue: 6, actualValue: 7 }
-  ];
-
-  const budgetItemsSize = expenses.length + incomes.length;
+  const { firstCategoryExpenses, firstCategoryIncomes, firstCategoryName, firstCategoryItemsSize } = BudgetUtils;
 
   hooks.beforeEach(function () {
     this.store = this.owner.lookup('service:store');
 
     const items = [
-      ...expenses.map(expense => this.store.createRecord('budget-item', expense)),
-      ...incomes.map(income => this.store.createRecord('budget-item', income))
+      ...firstCategoryExpenses.map(expense => this.store.createRecord('budget-item', expense)),
+      ...firstCategoryIncomes.map(income => this.store.createRecord('budget-item', income))
     ];
 
-    const category = { name: categoryName, items };
+    const category = { name: firstCategoryName, items };
 
     this.model = this.store.createRecord('budget-category', category);
   });
 
-  test('it creates', function(assert) {
-    assert.equal(this.model.name, categoryName);
-    assert.equal(this.model.items.length, budgetItemsSize);
+  test('it exists in the store', function(assert) {
+    assert.equal(this.model.name, firstCategoryName);
+    assert.equal(this.model.items.length, firstCategoryItemsSize);
   });
 
   test('it sums budgeted income values', function(assert) {
-    const expectedBudgetedIncome = sumBy(incomes, 'budgetedValue');
+    const expectedBudgetedIncome = sumBy(firstCategoryIncomes, 'budgetedValue');
     assert.equal(this.model.totalBudgetedIncome, expectedBudgetedIncome);
   });
 
   test('it sums actual income values', function(assert) {
-    const expectedActualIncome = sumBy(incomes, 'actualValue');
+    const expectedActualIncome = sumBy(firstCategoryIncomes, 'actualValue');
     assert.equal(this.model.totalActualIncome, expectedActualIncome);
   });
 
   test('it sums budgeted expense values', function(assert) {
-    const expectedBudgetedExpense = sumBy(expenses, 'budgetedValue');
+    const expectedBudgetedExpense = sumBy(firstCategoryExpenses, 'budgetedValue');
     assert.equal(this.model.totalBudgetedExpense, expectedBudgetedExpense);
   });
 
   test('it sums actual expense values', function(assert) {
-    const expectedActualExpense = sumBy(expenses, 'actualValue');
+    const expectedActualExpense = sumBy(firstCategoryExpenses, 'actualValue');
     assert.equal(this.model.totalActualExpense, expectedActualExpense);
   });
 
   test('it calculates budgeted revenue', function(assert) {
-    const expectedBudgetedRevenue = sumBy(incomes, 'budgetedValue') - sumBy(expenses, 'budgetedValue');
+    const expectedBudgetedRevenue = sumBy(firstCategoryIncomes, 'budgetedValue') - sumBy(firstCategoryExpenses, 'budgetedValue');
     assert.equal(this.model.budgetedRevenue, expectedBudgetedRevenue);
   });
 
   test('it calculates actual revenue', function(assert) {
-    const expectedActualRevenue = sumBy(incomes, 'actualValue') - sumBy(expenses, 'actualValue');
+    const expectedActualRevenue = sumBy(firstCategoryIncomes, 'actualValue') - sumBy(firstCategoryExpenses, 'actualValue');
     assert.equal(this.model.actualRevenue, expectedActualRevenue);
   });
 
